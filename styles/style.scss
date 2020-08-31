@@ -1,0 +1,156 @@
+@import './toggle';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    text-align: center;
+    background-color: hsl(240, 78%, 98%);
+    height: 100%;
+    font-family: 'Montserrat',
+        sans-serif;
+    font-weight: 700;
+    color: hsl(233, 13%, 49%);
+    position: relative;
+    overflow-x: hidden;
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bg-top {
+    position: absolute;
+    top: 0;
+    right: -200px;
+    z-index: -1;
+    display: none;
+}
+
+.bg-top-mobile {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
+}
+
+.bg-bot {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 50%;
+}
+
+header {
+    padding: 40px 0;
+
+    h1 {
+        margin-bottom: 30px;
+    }
+
+    p {
+        color: hsl(234, 14%, 74%);
+    }
+}
+
+.pricing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Cards
+.card {
+    background-color: white;
+    width: 335px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border-radius: 10px;
+
+    h3 {
+        font-size: 1.3rem;
+        padding: 25px 0 0;
+    }
+
+    p {
+        padding: 15px 0;
+        font-size: 0.9rem;
+    }
+}
+
+.price {
+    font-size: 4.2rem;
+    padding: 20px 0;
+    color: hsl(232, 13%, 33%);
+}
+
+hr {
+    width: 80%;
+    margin: auto;
+    border-style: none;
+    border-top: 2px solid #DDDBDB;
+}
+
+a {
+    text-decoration: none;
+    width: 85%;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    display: block;
+    margin: 25px auto;
+    padding: 15px;
+    display: inline-block;
+    color: whitesmoke;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+}
+
+a:hover {
+    background-color: white;
+    background-image: none;
+    color: hsl(237, 63%, 64%);
+    border: solid 1px;
+}
+
+.pro {
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: whitesmoke;
+
+    hr {
+        border-top: 1px solid #DDDBDB;
+    }
+
+    .price {
+        color: whitesmoke;
+    }
+
+    a {
+        background-image: unset;
+        background-color: whitesmoke;
+        color: hsl(237, 63%, 64%);
+    }
+
+    a:hover{
+        background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+        color: white;
+        border: solid 1px;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+@import './desktop'
